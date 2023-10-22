@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>mainPage</title>
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="bootstrap-4.1.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script src="js/javascript.js"></script>
+</head>
+
+<body>
+	<div class="jumbotron">
+		<h1>BSCpE 5A</h1>
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="navbar-brand" href="#">Group 3</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   	  <span class="navbar-toggler-icon"></span>
+ 	</button>
+
+  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  		<ul id="menu-main-nav" class="navbar-nav nav-fill w-100">
+  		  <li class="nav-item"><a href="mainPage.html" class="nav-link">Body Mass Index</a></li>
+  		  <li class="nav-item"><a href="unitPage.html" class="nav-link">Currency Conversion</a></li>
+  		  <li class="nav-item"><a href="tempPage.html" class="nav-link"><u><b>Temperature Conversion</b></u></a></li>
+  		  <li class="nav-item"><a href="multPage.html" class="nav-link">Multiply</a></li>
+		</ul>
+  	</div>
+	</nav>
+	<div class="container expand">
+	<div class="form-check-inline">
+		<label><b>Temperature:&nbsp&nbsp</b></label>
+		<input class="input-group-prepend" id="tempval"> &nbsp
+  		<select type="text" class="form-control" id="temp" onChange="tempp()">
+			<option value="cel">ºC</option>
+  			<option value="far">ºF</option>
+  			<option value="kel">ºK</option>
+		</select>	
+	</div>
+<p id="display">Select [1] for ºC to ºF.<br>Select [2] for ºC to ºK.<br></p>
+<input type="number" id="tempsel">&nbsp;&nbsp;<strong>Select </strong><br><br>
+<button class="btn-dark" onClick="tCon()">Submit</button><br>
+<p id="tempres"></p>
+	</div>
+</body>
+</html>

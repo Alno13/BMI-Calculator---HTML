@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>mainPage</title>
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="bootstrap-4.1.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script src="js/javascript.js"></script>
+</head>
+
+<body>
+	<div class="jumbotron">
+		<h1>BSCpE 5A</h1>
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="navbar-brand" href="#">Group 3</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   	  <span class="navbar-toggler-icon"></span>
+ 	</button>
+
+  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  		<ul id="menu-main-nav" class="navbar-nav nav-fill w-100">
+  		  <li class="nav-item"><a href="mainPage.html" class="nav-link">Body Mass Index</a></li>
+  		  <li class="nav-item"><a href="unitPage.html" class="nav-link"><u><b>Currency Conversion</b></u></a></li>
+  		  <li class="nav-item"><a href="tempPage.html" class="nav-link">Temperature Conversion</a></li>
+  		  <li class="nav-item"><a href="multPage.html" class="nav-link">Multiply</a></li>
+		</ul>
+  	</div>
+</nav>
+	<div class="container expand">
+		<h3>&nbsp;</h3>
+		<input type="number" id="val">&nbsp;&nbsp;<strong>Value </strong><br><br>
+		<table>
+			<tr>
+				<td>[1]</td>
+				<td>--</td>
+				<td>php - dollar</td>
+			</tr>
+			<tr>
+				<td>[2]</td>
+				<td>--</td>
+				<td>dollar - php</td>
+			</tr>
+		</table>
+		<br><input type="number" id="sel">&nbsp;&nbsp;<strong>Select </strong><br><br>
+		<p id="conv"></p><br>
+		<button class="btn-dark" onClick="unit()">Submit</button>
+	</div>
+</body>
+</html>
